@@ -1,2 +1,2 @@
 # SpringBoot-JWT
-Proyecto para implementar autenticación mediante jet
+Proyecto para implementar autenticación mediante jwt
