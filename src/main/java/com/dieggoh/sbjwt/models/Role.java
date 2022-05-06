@@ -12,21 +12,35 @@ public class Role {
     @Column(length = 20)
     private ERole name;
 
-    public Role(){}
+    public Role() {
+    }
 
-    public Role(ERole name){
+    public Role(ERole name) {
         this.name = name;
     }
-    public Integer getId(){
+
+    public Integer getId() {
         return id;
     }
-    public void setId(Integer id){
+
+    public void setId(Integer id) {
         this.id = id;
     }
-    public ERole getName(){
+
+    public ERole getName() {
         return name;
     }
-    public void setName(ERole name){
+
+    public void setName(ERole name) {
         this.name = name;
     }
+
+    @Override
+    public String toString(){
+        final StringBuilder sb = new StringBuilder("Role {");
+        sb.append("id=").append(id);
+        sb.append(", name=").append(name);
+        return sb.toString();
+    }
+
 }

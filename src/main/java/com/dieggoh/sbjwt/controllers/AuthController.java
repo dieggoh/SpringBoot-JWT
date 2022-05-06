@@ -78,7 +78,6 @@ public class AuthController {
                 signupRequest.getEmail(),
                 encoder.encode(signupRequest.getPassword()));
         Set<String> strRoles = signupRequest.getRole();
-        System.out.println(strRoles);
         Set<Role> roles = new HashSet<>();
         if (strRoles == null) {
             Role userRole = roleRepository.findByName(ERole.ROLE_USER)
